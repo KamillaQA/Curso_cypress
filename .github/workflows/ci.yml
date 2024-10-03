@@ -1,0 +1,21 @@
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npx cypress run --record
+        env:
+          CYPRESS_RECORD_KEY: ${{ cddf53b2-c776-474a-a6d1-702998b358db }}
+
+test:
+  script:
+    - npm install
+    - npx cypress run --record
+  variables:
+    CYPRESS_RECORD_KEY: "cddf53b2-c776-474a-a6d1-702998b358db"
