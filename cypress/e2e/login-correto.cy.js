@@ -5,8 +5,6 @@ describe('Página de Login', () => {
     })
 
     it('Login com sucesso no sistema', () => {
-      cy.get('[data-test="input-loginEmail"]').type('kprado@websupply.com.br');
-      cy.get('[data-test="input-loginPassword"]').type('Acesso123');
-      cy.get('[data-test="submit-button"]').click();
+     cy.login('kprado@websupply.com.br', 'Acesso123')
     })
   })

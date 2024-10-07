@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-03T17:01:15.350Z",
+    "end": "2024-10-03T17:01:21.971Z",
+    "duration": 6621,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "258821ef-1681-446f-990c-3274c33f7b62",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-correto.cy.js",
+      "file": "cypress\\e2e\\cadastro-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6a64b16-a804-47ec-8d24-755b957ee443",
+          "title": "Página de Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher os campos do formulário corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de Cadastro Deve preencher os campos do formulário corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 3722,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.Cadastrar('Kamilla', 'kprado@websupply.com.br', 'Acesso123');",
+              "err": {},
+              "uuid": "cb9386bd-281a-412c-898d-b082d8aad51e",
+              "parentUUID": "a6a64b16-a804-47ec-8d24-755b957ee443",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cb9386bd-281a-412c-898d-b082d8aad51e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3722,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

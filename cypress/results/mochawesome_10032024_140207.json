@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-03T17:02:02.198Z",
+    "end": "2024-10-03T17:02:07.095Z",
+    "duration": 4897,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e4dee7e8-faf4-41ee-a825-fd6564d730ed",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-icorreto.cy.js",
+      "file": "cypress\\e2e\\login-icorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f5b9a6ab-1631-4deb-93b7-97ba0964a841",
+          "title": "Página de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Falha no login do sistema",
+              "fullTitle": "Página de Login Falha no login do sistema",
+              "timedOut": null,
+              "duration": 2501,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('kprado.com');\ncy.get('[data-test=\"input-loginPassword\"]').type('kakak');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "490e77c5-5fe2-4135-bd8e-e061d89e3bde",
+              "parentUUID": "f5b9a6ab-1631-4deb-93b7-97ba0964a841",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "490e77c5-5fe2-4135-bd8e-e061d89e3bde"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2501,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
