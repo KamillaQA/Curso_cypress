@@ -1,4 +1,2 @@
 node_modules/
-.env
-logs/
-*.tmp
+cypress.env.json
